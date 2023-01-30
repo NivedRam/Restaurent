@@ -1,0 +1,82 @@
+api Call in js
+----------------
+AJAX
+
+-XMLhtp
+-fetch
+-asynch await
+
+
+
+redirection in react
+--------------------------
+
+react-router-dom:-npm i react-router-dom
+
+ BrowserRouter as Router-All roting need components
+ ,Routes-To set path For each Components
+ ,Route - more than one path
+
+
+
+useParams-hook used to access params from component url
+
+
+
+REDUX
+-----
+
+coupling-  Many connections between parrent5 and child component
+
+Props Drilling- in Coup,ling if any intermediate component have any errors all other child wil not work
+
+to avoid props drilling we neeed to reduce coupling and make all the components indipendent
+
+
+for this react introduced new technology- state management technology-REDUX
+
+
+Redux Process
+------------------
+
+Create a new js file to keep the states,all the components can access the js file 
+
+components can only access data from data.js , cannot modify it in there
+
+
+component access data from data.js and do a dispatch call/request to the action file where all the logic is implemented.
+
+all logic to modify / update data is stored inside action file.
+
+The response from the action file is send to Reducer file as a payload.Reducer will in turn update the data in the data.
+Dispatch -> Method used to dispatch the logic in action file when the component need state updation 
+
+
+Reducer->  update the datas in js file according to the payload response get from action file
+
+
+
+Libraries to apply redux
+-------------------------
+REDUX
+REACT-REDUX
+REDUX-THUNk
+
+
+createStore-method used to create store in js file
+            expects 2 arguments
+                1)reducer
+                2)middleware - used to make sychronus redux to asynchronus
+
+  appluMiddleware() -method in Redux to apply middleware
+
+
+combineReducers() - method in Redux to combine all the reducers in js file
+
+thunk()-used to create Middleware
+
+
+1)create store
+2)apply the store in index.js  
+                -provider-
+                    is a tag used to pass the store (react-redux)
