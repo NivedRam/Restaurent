@@ -1,8 +1,12 @@
 import { createStore,combineReducers,applyMiddleware } from "redux";
 import thunk from "redux-thunk";
+import { restuarantListReducer } from "./reducers/restaurentReducer";
 
 // reducer
-const reducers=combineReducers({})
+const reducers=combineReducers({
+    restaurantReducer:restuarantListReducer
+
+})
 
 
 // middleware

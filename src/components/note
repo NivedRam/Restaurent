@@ -79,4 +79,16 @@ thunk()-used to create Middleware
 1)create store
 2)apply the store in index.js  
                 -provider-
-                    is a tag used to pass the store (react-redux)
+                    is a tag used to pass the store (react-redux
+
+
+
+
+AXIOS- Module used to make http methods(api call)
+npm i axios
+
+use dispatch-hook used to dispatch actions in components-react redux
+
+
+
+to access data from store to components-useSelector-a hook 
